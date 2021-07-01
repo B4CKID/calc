@@ -1,0 +1,80 @@
+def sub():
+  print("You have chose subtraction:")
+  s1 = input("Enter first number for subtraction: ")
+  s2 = input("Enter second number for subtraction: ")
+  try:
+    su1 = int(s1)
+    su2 = int(s2)
+  except:
+    print("Invalid choices!")
+    sub()
+  subtraction = su1 - su2
+  print(f"The sum of your numbers is {subtraction}! " )
+  menu()
+
+def div():
+  print("You have chosen division:")
+  d1  = input("Enter first number for division: ")
+  d2 = input("Enter second number for division: ")
+  try:
+    di1 = int(d1)
+    di2 = int(d2)
+  except:
+    print("Invalid choices!")
+    div()
+  division = di1 / di2
+  print(f" The sum of your numbers is {division}!")
+  menu()
+
+def add():
+  print("You have chose addition:")
+  a1 = input("Enter first number for addition: ")
+  a2 = input("Enter second number for addition: ")
+  try:
+    ad1 = int(a1)
+    ad2 = int(a2)
+  except:
+    print("Invalid choices!")
+    add()
+  addition = ad1+ad2
+  print(f"The sum of your numbers is {addition}! " )
+  menu()
+  
+
+def mul():
+  print("You have chose multiplication:")
+  m1 = input("Enter first number for multiplication: ")
+  m2 = input("Enter second number for multiplication: ")
+  try:
+    mu1 = int(m1)
+    mu2 = int(m2)
+
+  except:
+    print("Invalid choices!")
+    mul()
+
+  multiplication = mu1 * mu2
+  print(f"The sum of your numbers is {multiplication}! " )
+  menu()
+ 
+
+def menu():
+  print("What operator would you like to use? 1: Addition, 2: Subtraction, 3: Multiplication, 4: Division")
+  type = input("Enter choice here: ")
+  if type == "1":
+    add()
+
+  elif type == "2":
+    sub()
+
+  elif type == "3":
+    mul()
+
+  elif type == "4":
+    div()
+
+  else:
+    print("Invalid choice")
+    menu()
+
+menu()
