@@ -1,3 +1,5 @@
+invalid_choice = "Invalid choice!"
+
 def sub():
   print("You have chose subtraction:")
   s1 = input("Enter first number for subtraction: ")
@@ -6,7 +8,7 @@ def sub():
     su1 = int(s1)
     su2 = int(s2)
   except:
-    print("Invalid choices!")
+    print(invalid_choice)
     sub()
   subtraction = su1 - su2
   print(f"The sum of your numbers is {subtraction}! " )
@@ -20,7 +22,7 @@ def div():
     di1 = int(d1)
     di2 = int(d2)
   except:
-    print("Invalid choices!")
+    print(invalid_choice)
     div()
   division = di1 / di2
   print(f" The sum of your numbers is {division}!")
@@ -34,7 +36,7 @@ def add():
     ad1 = int(a1)
     ad2 = int(a2)
   except:
-    print("Invalid choices!")
+    print(invalid_choice)
     add()
   addition = ad1+ad2
   print(f"The sum of your numbers is {addition}! " )
@@ -50,7 +52,7 @@ def mul():
     mu2 = int(m2)
 
   except:
-    print("Invalid choices!")
+    print(invalid_choice)
     mul()
 
   multiplication = mu1 * mu2
@@ -74,7 +76,7 @@ def menu():
     div()
 
   else:
-    print("Invalid choice")
+    print(invalid_choice)
     menu()
 
 menu()
